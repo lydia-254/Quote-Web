@@ -7,10 +7,10 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quote:Quote[]=[
-    {quote:'the purpose of life is to be happy',author:'Kangeri Lydia',name:'Lydia'},
-    {quote:'if you find someone that you love in your life, then hang on to that love.',author:'Princess Diana',name:'Diana'},
-    {quote:'intellectual growth should commence at birth and ease only at death.',author:'Albert Eistein',name:'Eistein'},
+  
+    quote=[new Quote('the purpose of life is to be happy',"Kangeri Lydia","Lydia",0,0),
+    new Quote("if you find someone that you love in your life, then hang on to that love.","Princess Diana","Diana",0,0,),
+    new Quote("intellectual growth should commence at birth and ease only at death.","Albert Eistein","Eistein",0,0,),
   ];
 
   constructor() { }
