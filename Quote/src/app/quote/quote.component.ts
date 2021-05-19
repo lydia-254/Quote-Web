@@ -12,6 +12,9 @@ export class QuoteComponent implements OnInit {
     new Quote("if you find someone that you love in your life, then hang on to that love.","Princess Diana","Diana",0,0,),
     new Quote("intellectual growth should commence at birth and ease only at death.","Albert Eistein","Eistein",0,0,),
   ];
+  completeQuote(isComplete: any ,index: any){
+
+  }
 
   constructor() { }
 

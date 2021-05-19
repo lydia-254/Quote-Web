@@ -9,5 +9,6 @@ export class Quote {
       this.showDescription=true;
       this.upvote=0
       this.downvote=0
+    //   this.description=false;
     }
   }

@@ -2,9 +2,11 @@
     <h1>My Quotes</h1>
     <hr>
     <ul>
-        <li *ngFor='let quote of quote'>
-          {{quote.name}}
-          <app-quote-detail *ngif='quote.showDescription' [quote]='quote'></app-quote-detail>
+        <li *ngFor='let quote of quote;let i=index'>
+          <h6>{{quote.quote}}</h6>
+          <h6>{{quote.author}}</h6>
+          <h6>{{quote.name}}</h6>
+          <app-quote-detail *ngif='quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
         </li>
     </ul>
   </div>
