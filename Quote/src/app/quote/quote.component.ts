@@ -12,6 +12,16 @@ export class QuoteComponent implements OnInit {
     new Quote("if you find someone that you love in your life, then hang on to that love.","Princess Diana","Diana",0,0,),
     new Quote("intellectual growth should commence at birth and ease only at death.","Albert Eistein","Eistein",0,0,),
   ];
+  addQuote(emittedQuote:Quote){
+    this.quote.push(emittedQuote)
+  }
+  
+  upvote(i: number){
+    this.quote[i].upvote=0
+  }
+  downvote(i: number){
+    this.quote[i].downvote=0
+  }
   completeQuote(isComplete: any ,index: any){
     if(isComplete){
       let toDelete =confirm('~Are you sure you want to delete')
