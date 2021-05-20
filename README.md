@@ -53,3 +53,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Deployment
 
 To view this click on the live[ link](https://lydia-254.github.io/Quote-Web/) here.
+
+## Contacts
+
+[Email](https://mail.google.com) - kangerilydia@gmail.com <br>
+Phone - +254719781523
+
+## Acknowledgments
+
+- Sam Tomashi
+- Ken Githaiga
