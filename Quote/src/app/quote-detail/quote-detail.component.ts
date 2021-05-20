@@ -1,5 +1,5 @@
-import { Output } from '@angular/core';
-import { Component, Input, OnInit, EventEmitter } from '@angular/core';
+// import { Output } from '@angular/core';
+import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
 // import * as EventEmitter from 'events';
 import { Quote } from '../quote';
 

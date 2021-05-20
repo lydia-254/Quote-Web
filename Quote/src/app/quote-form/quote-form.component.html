@@ -1,0 +1,57 @@
+<!-- <p>quote-form works!</p> -->
+<div class="container">
+  <h2>Create a New Quote</h2>
+  <hr>
+  <form (ngSubmit)='submitQuote' #quoteForm='ngForm'>
+    <div class="form-group">
+
+      <label for="name">Quote</label>
+      <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel'
+        required>
+      <div [hidden]="name.valid|| name.pristine" class="alert alert-danger">
+        <p>Quote is required</p>
+      </div>
+    </div>
+
+    <br>
+    <div class="form-group">
+
+
+      <label for="name">Author</label>
+      <input type="text" required class="form-control" id="Author">
+      <div [hidden]="name.valid|| name.pristine" class="alert alert-danger">
+        <p>Author is required</p>
+      </div>
+    </div>
+    <br>
+    <div class="form-group">
+
+
+      <label for="quote">Name</label>
+      <textarea class="form-control" id="quote" rows="4" required [(ngModel)]="newQuote.quote" name="name"
+        #quote="ngModel" required></textarea>
+      <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+        <p>Quote is required</p>
+      </div>
+
+    </div>
+    <button type="submit" class="btn btn-success">ADD QUOTE</button>
+  </form>
+</div>
+  <!-- <div class="row">
+      <div class="col-md-6">
+        <div *ngFor='let quote of quotes;let i = index'> -->
+  
+    <!-- <h6 id={{i}} appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h6> -->
+    <!-- <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button> -->
+    <!-- </div>
+  
+          <div *ngIf='quote.showDescription'>
+            <app-quote-detail  [quote]='quote' (isComplete) = 'deletequote($event,i)'></app-quote-detail>
+          </div>
+        </div>
+      </div> -->
+    <!-- <div class="col-md-6">
+        <app-quote-form (addQuote)= 'addNewQuote($event)'></app-quote-form>
+      </div> -->
+

@@ -13,7 +13,17 @@ export class QuoteComponent implements OnInit {
     new Quote("intellectual growth should commence at birth and ease only at death.","Albert Eistein","Eistein",0,0,),
   ];
   completeQuote(isComplete: any ,index: any){
-
+    if(isComplete){
+      let toDelete =confirm('~Are you sure you want to delete')
+      this.quote.splice(index,1);
+    }
+  }
+  addNewQuote(quote: Quote){
+    let quoteLength = this.quote.length;
+    quote.name =quote.name ;
+    quote.quote=quote.quote;
+    // quote.completeDate =new Date(quote.completeDate)
+    this.quote.push(quote)
   }
 
   constructor() { }
